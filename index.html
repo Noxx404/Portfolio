@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Story Reader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="floating-text">Hover over me to drift!</h1>
+        <p class="sub-text">Click a button below to load and expand the content.</p>
+
+        <div id="iframe-wrapper" class="iframe-wrapper">
+            <button id="close-btn" class="close-btn">× Close Fullscreen</button>
+            <iframe id="content-frame" src="about:blank"></iframe>
+        </div>
+
+        <div class="button-array">
+            <button class="nav-btn" data-target="page1.html">Read Story 1</button>
+            <button class="nav-btn" data-target="page2.html">Read Story 2</button>
+            <button class="nav-btn" data-target="page3.html">Read Story 3</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
